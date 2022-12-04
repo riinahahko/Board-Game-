@@ -8,3 +8,11 @@ class Game(models.Model):
     def __str__(self):
         """Return a string reprresentation of the model"""
         return self.name
+
+class Player(models.Model):
+    """Board game players that can loan the games."""
+    game = models.ForeignKey(Game, on_delete=models.CASCADE)
+    player_name = models.TextField()
+    
+    def __str__(self):
+        return f"{self.game[:50]}..."
