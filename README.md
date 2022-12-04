@@ -1,1 +1,8 @@
-# Board-Game- Testing out the creation of an Django project again in a different repository. 
+#Board Games app
+
+classes done:
+Game 
+Player
+
+left on page 394, Making pages: The ... home page.
+Branch URL, add mapping a URL 
