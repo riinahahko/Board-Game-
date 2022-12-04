@@ -2,7 +2,7 @@ from django.db import models
 
 class Game(models.Model):
     """A game the user has added"""
-    name = models.CharField(max_lenght=200)
+    name = models.CharField(max_length=200)
     date_added = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
